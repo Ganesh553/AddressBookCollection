@@ -41,6 +41,7 @@ public class AddressBookMain {
                     System.out.println("Enter state");
                     String state=sc.next();
                     System.out.println("Enter Zip");
+                    System.out.println("Enter Zip");
                     int zip=sc.nextInt();
                     System.out.println("Enter phone number");
                     long phoneNumber=sc.nextLong();
@@ -57,6 +58,11 @@ public class AddressBookMain {
                     break;
                 case 5: System.out.println("Enter the First name to check duplicate");
                     ab.duplicatEntry();
+                    break;    
+                case 2: System.out.println("Editing Person");
+                    System.out.println("Enter the firstName of the Person that you wish to edit");
+                    String editName=sc.next();
+                    ab.editingPerson(editName);
                     break;
                 default: System.out.println("your not selected between 1 to 9");
             }
