@@ -41,6 +41,7 @@ public class AddressBookMain {
                     System.out.println("Enter state");
                     String state=sc.next();
                     System.out.println("Enter Zip");
+                    System.out.println("Enter Zip");git
                     int zip=sc.nextInt();
                     System.out.println("Enter phone number");
                     long phoneNumber=sc.nextLong();
