@@ -40,12 +40,18 @@ public class AddressBookMain {
                     String city=sc.next();
                     System.out.println("Enter state");
                     String state=sc.next();
+                    System.out.println("Enter Zip");
                     System.out.println("Enter Zip");git
                     int zip=sc.nextInt();
                     System.out.println("Enter phone number");
                     long phoneNumber=sc.nextLong();
                     Person person = new Person(firstName,lastName,address,city,state,zip,phoneNumber);
                     ab.addingNewPerson(person);
+                    break;
+                case 2: System.out.println("Editing Person");
+                    System.out.println("Enter the firstName of the Person that you wish to edit");
+                    String editName=sc.next();
+                    ab.editingPerson(editName);
                     break;
                 default: System.out.println("your not selected between 1 to 9");
             }
