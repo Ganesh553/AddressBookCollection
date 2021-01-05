@@ -48,6 +48,14 @@ public class AddressBookMain {
                     Person person = new Person(firstName,lastName,address,city,state,zip,phoneNumber);
                     ab.addingNewPerson(person);
                     break;
+                case 3: System.out.println("Deleting Person");
+                    System.out.println("Enter the firstName of the person that you wish to delete");
+                    String deleteName=sc.next();
+                    ab.deletingPerson(deleteName);
+                    break;
+                case 4: System.out.println("Displaying all the contacts ");
+                    ab.display();
+                    break;    
                 case 2: System.out.println("Editing Person");
                     System.out.println("Enter the firstName of the Person that you wish to edit");
                     String editName=sc.next();
