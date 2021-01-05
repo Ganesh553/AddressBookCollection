@@ -41,6 +41,7 @@ public class AddressBookMain {
                     System.out.println("Enter state");
                     String state=sc.next();
                     System.out.println("Enter Zip");
+                    System.out.println("Enter Zip");
                     int zip=sc.nextInt();
                     System.out.println("Enter phone number");
                     long phoneNumber=sc.nextLong();
@@ -66,7 +67,7 @@ public class AddressBookMain {
                 case 6: System.out.println("Enter the State to see the person");
                     String searchState=sc.next();
                     ab.searchState(searchState);
-                    break;
+                    break;    
                 default: System.out.println("your not selected between 1 to 9");
             }
             System.out.println("Do you wish to continue y/n");
@@ -81,4 +82,3 @@ public class AddressBookMain {
         }
     }
 }
-
