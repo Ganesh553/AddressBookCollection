@@ -82,4 +82,54 @@ public class AddressBook {
             }
         }
     }
+    public void display() {
+        if(al.isEmpty())
+            System.out.println("No Address Present");
+        else {
+            for(Person obj : al) {
+                System.out.print("FirstName: "+ obj.getFirstName()+" LastName: " + obj.getLastName()+" Address: " + obj.getAddress()+" City: "+ obj.getCity()+" State: " + obj.getState()+" Zip: " + obj.getZip()+" phoneNumber: " + obj.getPhoneNumber());
+                System.out.println();
+            }
+        }
+    }
+    public void duplicatEntry() {
+        if(al.isEmpty())
+            System.out.println("No element in Address Book");
+        else {
+            for(Person obj : al) {
+                System.out.println("Enter First name");
+                String firstName = sc.next();
+                if (obj.getFirstName().equals(firstName))
+                {
+                    System.out.println("Dublicate entry is not allowed");
+                    break;
+                }
+                else {
+                    System.out.println("There is no duplicate, Continue..");
+                    break;
+                }
+            }
+
+        }
+    }
+    public void searchState(String searchState) {
+        if(al.isEmpty())
+            System.out.println("No Address Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getState().equals(searchState))
+                    System.out.println(obj.getFirstName());
+            }
+        }
+    }
+    public void searchCity(String searchCity) {
+        if(al.isEmpty())
+            System.out.println("No Address Present");
+        else {
+            for(Person obj:al) {
+                if(obj.getCity().equals(searchCity))
+                    System.out.println(obj.getFirstName());
+            }
+        }
+    }
 }
